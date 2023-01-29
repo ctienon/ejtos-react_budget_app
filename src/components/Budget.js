@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { AppContext } from '../context/AppContext';
-import ExpenseTotal from '../components/ExpenseTotal'
+
 
 const Budget = (props) => {
     const { budget } = useContext(AppContext);
@@ -37,10 +37,10 @@ const Budget = (props) => {
                 id='cost'
                 step ='10'
                 value={budget}
-                style={{ marginLeft: '2rem' , size: 10}}
+                style={{ marginLeft: '2rem' , width : 90, size: 10}}
                 onChange={(event) => UpdateBudget(event.target.value)}>
             </input>
-        </div>
+          </div>
     );
 };
 
